@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.quarkuscoffeeshop</groupId>
   <artifactId>quarkuscoffeeshop-kitchen</artifactId>
-  <version>5.2.0</version>
+  <version>6.2.0</version>
   <properties>
     <awaitility.version>4.0.2</awaitility.version>
     <compiler-plugin.version>3.8.1</compiler-plugin.version>
