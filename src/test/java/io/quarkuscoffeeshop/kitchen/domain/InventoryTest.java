@@ -1,7 +1,7 @@
-package io.quarkuscoffeeshop.prorobot.domain;
+package io.quarkusrobotshop.prorobot.domain;
 
 import io.quarkus.test.junit.QuarkusTest;
-import io.quarkuscoffeeshop.prorobot.domain.exceptions.EightySixException;
+import io.quarkusrobotshop.prorobot.domain.exceptions.EightySixException;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;

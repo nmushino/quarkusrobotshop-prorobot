@@ -1,7 +1,7 @@
-package io.quarkuscoffeeshop.prorobot.domain.valueobjects;
+package io.quarkusrobotshop.prorobot.domain.valueobjects;
 
 import io.quarkus.runtime.annotations.RegisterForReflection;
-import io.quarkuscoffeeshop.prorobot.domain.Item;
+import io.quarkusrobotshop.prorobot.domain.Item;
 
 import java.time.Instant;
 import java.util.StringJoiner;

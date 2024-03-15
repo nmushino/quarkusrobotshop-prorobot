@@ -1,8 +1,8 @@
-package io.quarkuscoffeeshop.prorobot.domain;
+package io.quarkusrobotshop.prorobot.domain;
 
 import io.quarkus.test.junit.QuarkusTest;
-import io.quarkuscoffeeshop.prorobot.domain.valueobjects.TicketIn;
-import io.quarkuscoffeeshop.prorobot.domain.valueobjects.TicketUp;
+import io.quarkusrobotshop.prorobot.domain.valueobjects.TicketIn;
+import io.quarkusrobotshop.prorobot.domain.valueobjects.TicketUp;
 import org.junit.jupiter.api.Test;
 
 import javax.inject.Inject;

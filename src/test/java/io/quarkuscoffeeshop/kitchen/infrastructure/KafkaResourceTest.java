@@ -1,14 +1,14 @@
-package io.quarkuscoffeeshop.prorobot.infrastructure;
+package io.quarkusrobotshop.prorobot.infrastructure;
 
 import io.quarkus.test.common.QuarkusTestResource;
 import io.quarkus.test.junit.QuarkusTest;
 import io.quarkus.test.junit.TestProfile;
 import io.quarkus.test.junit.mockito.InjectSpy;
-import io.quarkuscoffeeshop.prorobot.domain.Item;
-import io.quarkuscoffeeshop.prorobot.domain.Prorobot;
-import io.quarkuscoffeeshop.prorobot.domain.valueobjects.TicketIn;
-import io.quarkuscoffeeshop.prorobot.testing.KafkaTestProfile;
-import io.quarkuscoffeeshop.prorobot.testing.KafkaTestResource;
+import io.quarkusrobotshop.prorobot.domain.Item;
+import io.quarkusrobotshop.prorobot.domain.Prorobot;
+import io.quarkusrobotshop.prorobot.domain.valueobjects.TicketIn;
+import io.quarkusrobotshop.prorobot.testing.KafkaTestProfile;
+import io.quarkusrobotshop.prorobot.testing.KafkaTestResource;
 import io.smallrye.reactive.messaging.connectors.InMemoryConnector;
 import io.smallrye.reactive.messaging.connectors.InMemorySource;
 import org.eclipse.microprofile.config.inject.ConfigProperty;

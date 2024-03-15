@@ -1,10 +1,10 @@
-package io.quarkuscoffeeshop.prorobot.infrastructure;
+package io.quarkusrobotshop.prorobot.infrastructure;
 
 import io.quarkus.runtime.annotations.RegisterForReflection;
-import io.quarkuscoffeeshop.prorobot.domain.Prorobot;
-import io.quarkuscoffeeshop.prorobot.domain.exceptions.EightySixException;
-import io.quarkuscoffeeshop.prorobot.domain.valueobjects.TicketIn;
-import io.quarkuscoffeeshop.prorobot.domain.valueobjects.TicketUp;
+import io.quarkusrobotshop.prorobot.domain.Prorobot;
+import io.quarkusrobotshop.prorobot.domain.exceptions.EightySixException;
+import io.quarkusrobotshop.prorobot.domain.valueobjects.TicketIn;
+import io.quarkusrobotshop.prorobot.domain.valueobjects.TicketUp;
 import org.eclipse.microprofile.reactive.messaging.Channel;
 import org.eclipse.microprofile.reactive.messaging.Emitter;
 import org.eclipse.microprofile.reactive.messaging.Incoming;
