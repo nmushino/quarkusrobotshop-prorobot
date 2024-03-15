@@ -60,7 +60,7 @@ public class KafkaResourceTest {
         TicketIn ticketIn = new TicketIn(
             UUID.randomUUID().toString(),
             UUID.randomUUID().toString(),
-            Item.CAKEPOP,
+            Item.FAMKD8D8,
             "Uhura",
             Instant.now()
         );

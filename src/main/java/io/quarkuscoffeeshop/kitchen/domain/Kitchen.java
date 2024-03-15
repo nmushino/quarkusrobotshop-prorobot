@@ -38,16 +38,16 @@ public class Kitchen {
 
         int delay;
         switch (ticketIn.getItem()) {
-            case CROISSANT:
+            case FAC94S3:
                 delay = 5;
                 break;
-            case CAKEPOP:
+            case FAMKD8D8:
                 delay = 3;
                 break;
-            case CROISSANT_CHOCOLATE:
+            case FAND78K:
                 delay = 5;
                 break;
-            case MUFFIN:
+            case FASKK9K:
                 delay = 7;
                 break;
             default:
@@ -97,13 +97,13 @@ public class Kitchen {
 //        return CompletableFuture.supplyAsync(() -> {
 //
 //            switch(ticketIn.getItem()){
-//                case CAKEPOP:
+//                case FAMKD8D8:
 //                    return prepare(ticketIn, 5);
 //                case CROISSANT:
 //                    return prepare(ticketIn, 5);
-//                case CROISSANT_CHOCOLATE:
+//                case FAND78K:
 //                    return prepare(ticketIn, 5);
-//                case MUFFIN:
+//                case FASKK9K:
 //                    return prepare(ticketIn, 7);
 //                default:
 //                    return prepare(ticketIn, 11);

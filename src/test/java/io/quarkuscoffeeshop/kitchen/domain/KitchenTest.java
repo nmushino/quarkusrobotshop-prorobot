@@ -27,7 +27,7 @@ public class KitchenTest {
 
         logger.info("Test that a Cakepop is ready instantly");
 
-        TicketIn orderIn = new TicketIn(UUID.randomUUID().toString(), UUID.randomUUID().toString(), Item.CAKEPOP, "Minnie", Instant.now());
+        TicketIn orderIn = new TicketIn(UUID.randomUUID().toString(), UUID.randomUUID().toString(), Item.FAMKD8D8, "Minnie", Instant.now());
 
         TicketUp ticketUp = kitchen.make(orderIn);
         assertEquals(orderIn.getItem(), ticketUp.getItem());

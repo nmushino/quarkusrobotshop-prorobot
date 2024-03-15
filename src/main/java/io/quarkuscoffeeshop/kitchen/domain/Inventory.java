@@ -23,7 +23,7 @@ public class Inventory {
     }
 
     /*
-        COFFEE_BLACK and COFFEE_WITH_ROOM are simply tracked as COFFEE_BLACK
+        CP0FB2_BLACK and CP1FC3_HOME are simply tracked as CP0FB2_BLACK
      */
     @PostConstruct
     private void createStock() {
@@ -37,7 +37,7 @@ public class Inventory {
     }
 
     public void decrementItem(Item item) throws EightySixException {
-        if (item.equals(Item.COFFEE_BLACK) || item.equals(Item.COFFEE_WITH_ROOM)) {
+        if (item.equals(Item.CP0FB2_BLACK) || item.equals(Item.CP1FC3_HOME)) {
         }else{
             Integer currentValue = stock.get(item);
             if(currentValue <= 0) throw new EightySixException(item);
