@@ -1,10 +1,10 @@
-package io.quarkuscoffeeshop.kitchen.infrastructure;
+package io.quarkuscoffeeshop.prorobot.infrastructure;
 
 import io.quarkus.runtime.annotations.RegisterForReflection;
-import io.quarkuscoffeeshop.kitchen.domain.Kitchen;
-import io.quarkuscoffeeshop.kitchen.domain.exceptions.EightySixException;
-import io.quarkuscoffeeshop.kitchen.domain.valueobjects.TicketIn;
-import io.quarkuscoffeeshop.kitchen.domain.valueobjects.TicketUp;
+import io.quarkuscoffeeshop.prorobot.domain.Prorobot;
+import io.quarkuscoffeeshop.prorobot.domain.exceptions.EightySixException;
+import io.quarkuscoffeeshop.prorobot.domain.valueobjects.TicketIn;
+import io.quarkuscoffeeshop.prorobot.domain.valueobjects.TicketUp;
 import org.eclipse.microprofile.reactive.messaging.Channel;
 import org.eclipse.microprofile.reactive.messaging.Emitter;
 import org.eclipse.microprofile.reactive.messaging.Incoming;
@@ -22,7 +22,7 @@ public class KafkaResource {
     final Logger logger = LoggerFactory.getLogger(KafkaResource.class);
 
     @Inject
-    Kitchen kitchen;
+    Prorobot prorobot;
 
     @Inject
     @Channel("orders-in")
@@ -32,13 +32,13 @@ public class KafkaResource {
     @Channel("eighty-six-out")
     Emitter<String> eightySixEmitter;
 
-    @Incoming("kitchen-in")
+    @Incoming("prorobot-in")
     public CompletableFuture handleOrderIn(final TicketIn ticketIn) {
 
         logger.debug("TicketIn received: {}", ticketIn);
 
         return CompletableFuture.supplyAsync(() -> {
-            return kitchen.make(ticketIn);
+            return prorobot.make(ticketIn);
         }).thenApply(orderUp -> {
             logger.debug("OrderUp: {}", orderUp);
             orderUpEmitter.send(orderUp);

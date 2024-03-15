@@ -1,4 +1,4 @@
-package io.quarkuscoffeeshop.kitchen.testing;
+package io.quarkuscoffeeshop.prorobot.testing;
 
 import io.quarkus.test.junit.QuarkusTestProfile;
 

@@ -1,14 +1,14 @@
-package io.quarkuscoffeeshop.kitchen.infrastructure;
+package io.quarkuscoffeeshop.prorobot.infrastructure;
 
 import io.quarkus.test.common.QuarkusTestResource;
 import io.quarkus.test.junit.QuarkusTest;
 import io.quarkus.test.junit.TestProfile;
 import io.quarkus.test.junit.mockito.InjectSpy;
-import io.quarkuscoffeeshop.kitchen.domain.Item;
-import io.quarkuscoffeeshop.kitchen.domain.Kitchen;
-import io.quarkuscoffeeshop.kitchen.domain.valueobjects.TicketIn;
-import io.quarkuscoffeeshop.kitchen.testing.KafkaTestProfile;
-import io.quarkuscoffeeshop.kitchen.testing.KafkaTestResource;
+import io.quarkuscoffeeshop.prorobot.domain.Item;
+import io.quarkuscoffeeshop.prorobot.domain.Prorobot;
+import io.quarkuscoffeeshop.prorobot.domain.valueobjects.TicketIn;
+import io.quarkuscoffeeshop.prorobot.testing.KafkaTestProfile;
+import io.quarkuscoffeeshop.prorobot.testing.KafkaTestResource;
 import io.smallrye.reactive.messaging.connectors.InMemoryConnector;
 import io.smallrye.reactive.messaging.connectors.InMemorySource;
 import org.eclipse.microprofile.config.inject.ConfigProperty;
@@ -35,11 +35,11 @@ public class KafkaResourceTest {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(KafkaResourceTest.class);
 
-    @ConfigProperty(name = "mp.messaging.incoming.kitchen-in.topic")
-    protected String KITCHEN_IN;
+    @ConfigProperty(name = "mp.messaging.incoming.prorobot-in.topic")
+    protected String PROBOT_IN;
 
     @InjectSpy
-    Kitchen kitchen;
+    Prorobot prorobot;
 
     @Inject
     @Any
@@ -64,9 +64,9 @@ public class KafkaResourceTest {
             "Uhura",
             Instant.now()
         );
-        ordersIn = connector.source("kitchen-in");
+        ordersIn = connector.source("prorobot-in");
         ordersIn.send(ticketIn);
         await().atLeast(6, TimeUnit.SECONDS);
-        verify(kitchen, times(1)).make(any(TicketIn.class));
+        verify(prorobot, times(1)).make(any(TicketIn.class));
     }
 }

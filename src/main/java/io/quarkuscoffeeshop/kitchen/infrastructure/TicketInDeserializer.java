@@ -1,7 +1,7 @@
-package io.quarkuscoffeeshop.kitchen.infrastructure;
+package io.quarkuscoffeeshop.prorobot.infrastructure;
 
 import io.quarkus.kafka.client.serialization.ObjectMapperDeserializer;
-import io.quarkuscoffeeshop.kitchen.domain.valueobjects.TicketIn;
+import io.quarkuscoffeeshop.prorobot.domain.valueobjects.TicketIn;
 
 public class TicketInDeserializer extends ObjectMapperDeserializer<TicketIn> {
 

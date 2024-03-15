@@ -1,8 +1,8 @@
-package io.quarkuscoffeeshop.kitchen.domain;
+package io.quarkuscoffeeshop.prorobot.domain;
 
-import io.quarkuscoffeeshop.kitchen.domain.exceptions.EightySixException;
-import io.quarkuscoffeeshop.kitchen.domain.valueobjects.TicketIn;
-import io.quarkuscoffeeshop.kitchen.domain.valueobjects.TicketUp;
+import io.quarkuscoffeeshop.prorobot.domain.exceptions.EightySixException;
+import io.quarkuscoffeeshop.prorobot.domain.valueobjects.TicketIn;
+import io.quarkuscoffeeshop.prorobot.domain.valueobjects.TicketUp;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -13,9 +13,9 @@ import java.io.IOException;
 import java.net.InetAddress;
 
 @ApplicationScoped
-public class Kitchen {
+public class Prorobot {
 
-    static final Logger logger = LoggerFactory.getLogger(Kitchen.class.getName());
+    static final Logger logger = LoggerFactory.getLogger(Prorobot.class.getName());
 
     @Inject
     Inventory inventory;
@@ -74,7 +74,7 @@ public class Kitchen {
             throw new EightySixException(ticketIn.getItem());
         }
 
-        // model the barista's time making the drink
+        // model the homerobot's time making the drink
         try {
             Thread.sleep(seconds * 1000);
         } catch (InterruptedException e) {
@@ -122,7 +122,7 @@ public class Kitchen {
 //            return new EightySixEvent(ticketIn.getItem());
 //        }
 //
-//        // give the kitchen time to make the item
+//        // give the prorobot time to make the item
 //        try {
 //            Thread.sleep(seconds * 1000);
 //        } catch (InterruptedException e) {

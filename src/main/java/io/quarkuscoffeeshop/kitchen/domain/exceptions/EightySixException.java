@@ -1,8 +1,8 @@
-package io.quarkuscoffeeshop.kitchen.domain.exceptions;
+package io.quarkuscoffeeshop.prorobot.domain.exceptions;
 
 import io.quarkus.runtime.annotations.RegisterForReflection;
-import io.quarkuscoffeeshop.kitchen.domain.EightySixEvent;
-import io.quarkuscoffeeshop.kitchen.domain.Item;
+import io.quarkuscoffeeshop.prorobot.domain.EightySixEvent;
+import io.quarkuscoffeeshop.prorobot.domain.Item;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,9 +1,9 @@
-package io.quarkuscoffeeshop.kitchen.domain.valueobjects;
+package io.quarkuscoffeeshop.prorobot.domain.valueobjects;
 
 import io.quarkus.runtime.annotations.RegisterForReflection;
-import io.quarkuscoffeeshop.kitchen.domain.EventType;
-import io.quarkuscoffeeshop.kitchen.domain.Item;
-import io.quarkuscoffeeshop.kitchen.domain.LineItemEvent;
+import io.quarkuscoffeeshop.prorobot.domain.EventType;
+import io.quarkuscoffeeshop.prorobot.domain.Item;
+import io.quarkuscoffeeshop.prorobot.domain.LineItemEvent;
 
 import java.time.Instant;
 import java.util.Objects;

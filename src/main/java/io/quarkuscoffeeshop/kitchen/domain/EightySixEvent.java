@@ -1,4 +1,4 @@
-package io.quarkuscoffeeshop.kitchen.domain;
+package io.quarkuscoffeeshop.prorobot.domain;
 
 import io.quarkus.runtime.annotations.RegisterForReflection;
 

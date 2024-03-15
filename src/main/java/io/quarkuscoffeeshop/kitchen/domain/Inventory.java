@@ -1,6 +1,6 @@
-package io.quarkuscoffeeshop.kitchen.domain;
+package io.quarkuscoffeeshop.prorobot.domain;
 
-import io.quarkuscoffeeshop.kitchen.domain.exceptions.EightySixException;
+import io.quarkuscoffeeshop.prorobot.domain.exceptions.EightySixException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
