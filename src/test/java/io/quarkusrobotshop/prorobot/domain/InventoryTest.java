@@ -1,6 +1,8 @@
 package io.quarkusrobotshop.prorobot.domain;
 
 import io.quarkus.test.junit.QuarkusTest;
+import io.quarkusrobotshop.prorobot.domain.Inventory;
+import io.quarkusrobotshop.prorobot.domain.Item;
 import io.quarkusrobotshop.prorobot.domain.exceptions.EightySixException;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;

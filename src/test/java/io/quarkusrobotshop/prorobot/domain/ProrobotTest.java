@@ -1,6 +1,8 @@
 package io.quarkusrobotshop.prorobot.domain;
 
 import io.quarkus.test.junit.QuarkusTest;
+import io.quarkusrobotshop.prorobot.domain.Item;
+import io.quarkusrobotshop.prorobot.domain.Prorobot;
 import io.quarkusrobotshop.prorobot.domain.valueobjects.TicketIn;
 import io.quarkusrobotshop.prorobot.domain.valueobjects.TicketUp;
 import org.junit.jupiter.api.Test;
